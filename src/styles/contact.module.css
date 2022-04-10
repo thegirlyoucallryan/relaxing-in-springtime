@@ -1,0 +1,176 @@
+
+
+
+.contact{
+    position: absolute;
+    z-index: 65;
+    display: block;
+   
+
+    
+}
+.container{
+    display: flex;
+    padding: 25px;
+  
+
+}
+.contactInfo{   
+    width: 50%;
+    font-size: 25px;
+    flex-direction: column;
+    margin: 55px;
+    margin-top: 105px;
+    padding: 25px;
+    flex: 1;
+    color: #B7D7D9 !important;
+    text-align: center;
+}
+
+.formDiv{
+    margin: 20px;
+    margin-left: 90px;
+    margin-right: 90px;
+    flex-direction: column;
+    flex: 1;
+    
+}
+
+
+
+.formActual{
+    width: 60%;
+    background:transparent;
+    /* border: 1px solid white; */
+    
+    padding: 60px;
+    border-radius: 4px;
+}
+
+h5{
+    color: red;
+    
+    
+    
+}
+
+
+
+
+label{
+    font-size: 24px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+input{
+    font-size: 22px;
+    border-radius: 3px;
+    border: none;
+    padding: 5px;
+    border-bottom: 2px solid #B7D7D9;
+    color: #F8B195;
+    background: transparent;
+    
+
+}
+
+input[type=submit]{
+    width: 100%;
+    background: -webkit-linear-gradient(90deg, #F3A29F,#308A73);
+    padding: 15px 25px;
+    margin-top: 25px;
+    color: whitesmoke;
+    border:none;
+    font-family: Codystar;
+}
+
+input[type=submit]:hover{
+    background: -webkit-linear-gradient(90deg, #308A73,#F3A29F);
+    transition: all 2s;
+    font-weight: 400;
+    box-shadow: 0 3px 14px silver;
+    transition: all .2s;
+    
+}
+
+input[type=submit]:active{
+    box-shadow: 0 2px 4px grey;
+    transition: all .2s;
+}
+
+textarea{
+    color: #F8B195;
+    height: 90px;
+    font-size: 22px;
+    font-family: inter;
+    background: transparent;
+    outline: none;
+    border: none;
+    overflow: auto;
+    border-bottom: 2px solid #B7D7D9;
+  
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+textarea:focus{
+    outline: none;
+    border-bottom: 3px solid #005C53;
+    background: transparent;
+    resize: none;
+}
+
+input:focus{
+    outline: none;
+    border-bottom: 3px solid #005C53;
+    background: transparent;
+
+}
+
+input:active{
+    background: transparent;
+}
+
+
+@media only screen and (max-width: 600px){
+    .contactInfo{
+        display: none;
+        width: 0;
+        height: 0;
+    }
+
+    .formDiv{
+        margin: 0px 0px;
+        padding: 20px;
+       
+        
+    }
+    .container{
+        padding: 0px 10px;
+        width: 100%;
+     
+        
+    }
+    .formActual{
+        padding: 10px 20px;
+        width: 100%;
+
+         }
+
+    input{
+        font-size: 16px;
+    }
+    label{
+        font-size: 18px;
+    }
+    textarea{
+        height: 60px;
+    }
+    
+}

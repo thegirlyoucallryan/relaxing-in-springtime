@@ -1,0 +1,52 @@
+
+
+
+.about{
+    position: absolute;
+    z-index: 65;
+    display: block; 
+   
+   
+    
+}
+.header{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: inter;
+   
+    
+}
+h4{
+    font-size: 68px;
+    color: white;
+   
+    
+    
+}
+p{
+    padding: 0px 205px 55px 205px;
+    font-size: 23px;
+    color: white;
+   
+}
+
+@media only screen and (max-width: 600px){
+
+    h4{
+        font-size: 25px;
+      
+    }
+    p{
+        padding: 0px 10px ;
+        font-size: 13px;
+    }
+    h3{
+        font-size: 16px;
+        margin: 7px;
+        
+    }
+
+}

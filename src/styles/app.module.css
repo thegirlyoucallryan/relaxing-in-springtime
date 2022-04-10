@@ -1,0 +1,13 @@
+
+
+.app{
+    /* background: #0B463C; */
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(22,48,54,1) 18%, rgba(44,106,91,1) 66%, rgba(161,135,130,1) 100%);
+    height: 100vh;
+    /* background-image: linear-gradient(to bottom, rgba(45, 16, 13, 0.12), rgba(56, 19, 13, 0.93)), url(
+        '/src/images/stars.jpg'
+    );
+    background-repeat: no repeat;
+    height: 100vh */
+   
+}
