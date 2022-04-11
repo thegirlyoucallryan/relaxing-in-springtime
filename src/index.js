@@ -1,4 +1,4 @@
-import app from './app.jsx';
+import App from './App';
 import ReactDOM from 'react-dom';
 import './styles/index.module.css';
 import {BrowserRouter } from 'react-router-dom'
@@ -7,6 +7,6 @@ import {BrowserRouter } from 'react-router-dom'
 
 
 ReactDOM.render(
-  <BrowserRouter><app/></BrowserRouter>,
+  <BrowserRouter><App/></BrowserRouter>,
     document.getElementById('root')
   );
