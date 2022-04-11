@@ -41,7 +41,7 @@ const line4 = useSpring({ to: {  opacity: '1'}, from: { opacity: '0'},  delay: 1
       <CanvasModule  >
           <animated.div 
            style={greeting}>
-        <h1 className={styles.greeting} style={{position: 'absolute', zIndex: '300',display: 'block',
+        <h1 className={styles.greeting} onClick={() => {setOpen(false)}} style={{position: 'absolute', zIndex: '300',display: 'block',
         left: '0', right: '0', marginTop: '250px'}}>Hello</h1>
         </animated.div>
         <div className={styles.container} >

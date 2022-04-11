@@ -11,3 +11,11 @@
     height: 100vh */
    
 }
+
+.canvas{
+    height:'100vh';
+    width: '100vw'; 
+    maxHeight: '-moz-available';
+    maxHeight: '-webkit-fill-available';
+    maxHeight: 'fill-available';
+}
