@@ -17,7 +17,7 @@ const About = () => {
           <h4>I design & build digital products</h4>
           <div className={styles.linkBox}>
           <a href="https://github.com/thegirlyoucallryan">GitHub</a>
-          <a href="https://github.com/thegirlyoucallryan">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/ryan-marie-hartley/">LinkedIn</a>
 
           </div>
         
