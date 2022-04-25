@@ -69,6 +69,25 @@ a:hover{
     text-decoration: line-through
 }
 
+@media only screen and (max-width : 1300px){
+    a{
+        font-size: 17px;
+    }
+    .star{
+        padding: 15px 14px;
+    
+        
+    }
+    a::after{
+        content:none;
+        
+    }
+    .nav{margin: 20px; display: block}
+    
+   
+}
+
+
 @media only screen and (max-width : 600px){
     a{
         font-size: 15px;

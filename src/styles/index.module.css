@@ -88,12 +88,13 @@ button:hover{
 }
 
 .direction{
-    padding: 25px;
+  
    
 }
 
 .direction p{
     font-size: 15px !important;
+    padding: 0px 0px;
    
 }
 
@@ -109,6 +110,37 @@ button:hover{
 }
 
 
+@media only screen and (max-width: 1300px) {
+    h1 {
+      font-size: 40px;
+    }
+    h2{
+        font-size: 17px;
+    }
+
+    h3{
+        font-size: 16px;
+    
+    }
+    .headline {
+        width: 100%;
+        left: 0%;
+        top: 25%;
+        margin: 0;
+        padding: 0;
+     
+    }
+
+    .greeting{
+        font-size: 80px;
+        width: 100%;
+    }
+    .direction{
+        display: none;
+        height: 0px;
+      
+    }
+  }
 @media only screen and (max-width: 600px) {
     h1 {
       font-size: 46px;

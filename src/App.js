@@ -14,7 +14,7 @@ const App = () => {
     <div className={styles.app}>
       
      
-        <Route path="/"  exact component={Headline} />
+      <Route path="/"  exact component={Headline} />
               
        <Route path="/projects" component={Projects} exact/>
      

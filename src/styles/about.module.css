@@ -33,20 +33,31 @@ p{
    
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 1300px){
 
     h4{
+        margin-top: 30px;
         font-size: 25px;
       
     }
     p{
-        padding: 0px 10px ;
+        padding: 10px 20px ;
         font-size: 13px;
     }
     h3{
         font-size: 16px;
-        margin: 7px;
+        margin: 17px;
         
     }
+
+}
+@media only screen and (max-width: 600px){
+
+
+    p{
+        padding: 0px 10px ;
+        font-size: 13px;
+    }
+  
 
 }
