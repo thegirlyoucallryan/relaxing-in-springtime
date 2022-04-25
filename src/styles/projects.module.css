@@ -20,8 +20,7 @@
 
 
 .star{
-    font-size: 30px;
-    
+    font-size: 24px;
     text-decoration: none !imporant;
     padding: 85px 10px;
     -webkit-background-clip: none;
@@ -69,7 +68,10 @@ a:hover{
     text-decoration: line-through
 }
 
-@media only screen and (max-width : 1300px){
+
+
+
+@media only screen and (max-width : 1400px){
     a{
         font-size: 17px;
     }
