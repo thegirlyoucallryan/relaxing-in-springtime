@@ -11,7 +11,7 @@
 }
 .container{
     display: flex;
-    padding: 25px;
+    
   
 
 }
@@ -153,19 +153,11 @@ input:active{
 
     .formDiv{
         margin: 0px;
-        padding: 40px;
+       
        
         
     }
-    .container{
-        display: block;
-        margin-left: 0;
-        margin-right: 0;
-        
-        width: 100%;
-     
-        
-    }
+ 
     .formActual{
         padding: 10px 20px;
         
@@ -184,7 +176,7 @@ input:active{
 
 
 }
-@media only screen and (max-width: 1300px){
+@media only screen and (max-width: 1500px){
     .contactInfo{
         display: none;
         width: 0;
@@ -192,20 +184,14 @@ input:active{
     }
 
     .formDiv{
-        margin: 0px;
-        padding: 20px;
+       
+        width: 100%;
+        
+
        
         
     }
-    .container{
-        display: block;
-        margin-left: 0;
-        margin-right: 0;
-        
-        width: 100%;
-     
-        
-    }
+
     .formActual{
         padding: 10px 20px;
         
@@ -221,5 +207,18 @@ input:active{
     textarea{
         height: 60px;
     }
+    
+input[type=submit]{
+    width: 100%;
+    background: -webkit-linear-gradient(90deg, #F3A29F,#308A73);
+    padding: 10px 15px;
+    margin-top: 20px;
+    color: whitesmoke;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border:none;
+    
+}
     
 }
