@@ -85,6 +85,10 @@ a:hover{
         
     }
     .nav{margin: 20px; display: block}
+
+    h1{
+        font-size: 55px;
+    }
     
    
 }
