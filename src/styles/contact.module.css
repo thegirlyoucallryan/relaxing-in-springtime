@@ -11,28 +11,23 @@
 }
 .container{
     display: flex;
+    flex-direction: column;
+  
     
   
 
 }
 .contactInfo{   
-    width: 50%;
-    font-size: 25px;
-    flex-direction: column;
-    margin: 55px;
-    margin-top: 105px;
-    padding: 25px;
-    flex: 1;
+    
+    font-size: 20px;
+    margin-top: 20px;
     color: #B7D7D9 !important;
     text-align: center;
 }
 
 .formDiv{
-    margin: 20px;
-    margin-left: 90px;
-    margin-right: 90px;
-    flex-direction: column;
-    flex: 1;
+    display: flex;
+    justify-content: center;
     
 }
 
@@ -145,11 +140,7 @@ input:active{
 }
 
 @media only screen and (max-width: 1650px){
-    .contactInfo{
-        display: none;
-        width: 0;
-        height: 0;
-    }
+ 
 
     .formDiv{
         margin: 0px;
@@ -164,12 +155,30 @@ input:active{
 
          }
 
-    input{
-        font-size: 16px;
-    }
-    label{
-        font-size: 18px;
-    }
+  
+
+    
+label{
+    font-size: 18px;
+    padding: 11px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+input{
+    font-size: 16px;
+    border-radius: 3px;
+    border: none;
+    padding: 3px;
+    border-bottom: 2px solid #B7D7D9;
+    color: #F8B195;
+    background: transparent;
+    
+
+}
+ 
     textarea{
         height: 60px;
     }
@@ -177,19 +186,11 @@ input:active{
 
 }
 @media only screen and (max-width: 1500px){
-    .contactInfo{
-        display: none;
-        width: 0;
-        height: 0;
-    }
+  
 
     .formDiv{
-       
         width: 100%;
-        
-
-       
-        
+                
     }
 
     .formActual{

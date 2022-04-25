@@ -56,6 +56,7 @@ const Contact = () => {
     <div className={styles.container}>
         <div className={styles.contactInfo}>
             <h2 > Ryanmarie.hartley@gmail.com</h2>
+            <h2> -------------------------------</h2>
             <h2 >(407) 744 - 3600</h2>
             
         </div>
