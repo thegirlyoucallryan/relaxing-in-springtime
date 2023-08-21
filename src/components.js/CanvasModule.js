@@ -1,6 +1,6 @@
 import {Canvas} from '@react-three/fiber';
 import Moon from './planets/Moon';
-import Saturn from './planets/Saturn'
+
 import {  OrbitControls, Stars} from '@react-three/drei';
 import { Suspense } from 'react';
 import Flower from './Flower'

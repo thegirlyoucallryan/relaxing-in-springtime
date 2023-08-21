@@ -52,6 +52,8 @@ const Projects = ({home, about}) => {
                 <a class='from-top' href="https://getLesla.com" target="_blank" rel="noreferrer">Lesla</a>
                 <a class='from-top' href="https://play.google.com/store/apps/details?id=org.cicf.mvmt10k&pli=1" target="_blank" rel="noreferrer">Mvmt10k</a>
                 <a class='from-top' href="https://aerial-admin-app.com" target="_blank" rel="noreferrer">Aerial Admin</a>
+                <a class='from-top' href="" target="_blank" rel="noreferrer">No Cap Fitness App - soon to come</a>
+              
                   </div> 
               <div className={styles.star}>
                 <h2>NextJs</h2>
