@@ -1,10 +1,11 @@
-
-import { Link } from 'react-router-dom';
+import Contact from './Contact'
+import About from './About'
 import styles from '../styles/index.module.css';
 import CanvasModule from './CanvasModule';
 import { useTrail, a } from '@react-spring/web';
 import React, { useState } from 'react';
 import { useSpring, animated } from 'react-spring';
+import Projects from './Projects';
 
 
 const Trail = ({ open, children }) => {
@@ -31,6 +32,7 @@ const Trail = ({ open, children }) => {
 export default function Headline() {
   const [open, setOpen] = useState(true)
 window.addEventListener('mousedown', (e) => e.preventDefault())
+const [page, setPage] = useState('home')
 
 const greeting = useSpring({ to: {  opacity: '0'}, from: { opacity: '1'},  delay: 5500,  });
 const line4 = useSpring({ to: {  opacity: '1'}, from: { opacity: '0'},  delay: 10000,  });
@@ -39,30 +41,44 @@ const line4 = useSpring({ to: {  opacity: '1'}, from: { opacity: '0'},  delay: 1
   return(
 
       <CanvasModule  >
-          <animated.div 
-           style={greeting}>
-        <h1 className={styles.greeting} onClick={() => {setOpen(false)}} style={{position: 'absolute', zIndex: '300',display: 'block',
-        left: '0', right: '0', marginTop: '250px'}}>Hello</h1>
-        </animated.div>
-        <div className={styles.container} >
-      <Trail open={open}>
-       <h2 style={{marginTop:'-95px'}}>My name is</h2>
-       <h1 style={{marginTop:'-40px'}}>Ryan Hartley</h1>
-       <h3 style={{marginTop:'21px'}}>I'm a Front End Designer & Developer</h3>
+       
+
+    
+          <nav style={{position: 'absolute', zIndex: 224}}>
+          <a onClick={()=> setPage('home')}>Home</a>
+          <a onClick={()=> setPage('about')}>About</a>
+          <a onClick={()=> setPage('contact')}>Contact</a>
+        </nav>
+          {page === 'home' && <><animated.div
+        style={greeting}>
+        <h1 className={styles.greeting} onClick={() => { setOpen(false); } } style={{
+          position: 'absolute', zIndex: '300', display: 'block',
+          left: '0', right: '0', marginTop: '250px'
+        }}>Hello</h1>
+      </animated.div><div className={styles.container}>
+          <Trail open={open}>
+            <h2 style={{ marginTop: '-95px' }}>My name is</h2>
+            <h1 style={{ marginTop: '-42px' }}>Ryan Hartley</h1>
+            <h3 style={{ marginTop: '25px' }}>I'm a Front End Designer & Developer</h3>
+
+          </Trail>
+          <animated.div style={line4} className={styles.headline}>
+            <div className={styles.links}>
+              <a onClick={() => setPage('projects')}>Projects</a>
+              <a onClick={() => setPage('about')}>About</a>
+              <a onClick={() => setPage('contact')}>Contact</a>
+           
+            </div>
+            <div className={styles.direction}>
+              <p>Please scroll around and enjoy the view</p>
+            </div>
+          </animated.div>
+        </div></>
+     }
+     {page === 'projects' && <Projects home={() => setPage('home')}/>}
+     {page === 'about' && <About />}
+     {page === 'contact' && <Contact />}
   
-      </Trail>
-      <animated.div style={line4} className={styles.headline}>
-      <div className={styles.links}>
-          <Link to="/projects">Projects</Link>
-          <Link to="/about">About</Link>
-          <Link to="/contact">Contact</Link>
-          </div>
-          <div className={styles.direction}>
-            <p>Please look around and enjoy the view</p>
-          </div>
-      </animated.div>
-    </div>
-     
       </CanvasModule>
   )
 }

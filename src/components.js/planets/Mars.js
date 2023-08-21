@@ -17,14 +17,18 @@ export default function Model({ ...props }) {
 
     const elapsedTime = clock.getElapsedTime(); 
     group.current.rotation.y = -elapsedTime / 110;
+   
+    
  
     
   });
-  const { nodes, materials } = useGLTF('/mars.gltf')
+  const { nodes, materials } = useGLTF('/marsOut.gltf')
   return (
     <group ref={group} {...props} dispose={null}>
-      <group rotation={[-Math.PI / 2, 0, 0]} position={[-525, 424, 818]} scale={[60, 60,60]} >
+      <group rotation={[-Math.PI / 2, 0, 0]} position={[-525, 424, 818]} scale={[50, 50,50]} >
+      <group rotation={[Math.PI / 2, 0, 0]}  >
         <mesh geometry={nodes.Object_2.geometry} material={materials.moon} />
+        </group>
       </group>
     </group>
   )

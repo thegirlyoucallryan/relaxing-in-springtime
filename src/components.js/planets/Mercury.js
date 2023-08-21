@@ -13,7 +13,7 @@ import { useFrame } from '@react-three/fiber';
 export default function Model({ ...props }) {
   const group = useRef();
   const rotationRef = useRef();
-  const { nodes, materials } = useGLTF('/mercury.gltf');
+  const { nodes, materials } = useGLTF('/mercuryOut.gltf');
   useFrame(({clock}) => {
 
     const elapsedTime = clock.getElapsedTime(); 
@@ -23,9 +23,12 @@ export default function Model({ ...props }) {
   });
   return (
     <group ref={group} {...props} dispose={null} >
-      <group rotation={[-Math.PI / 2, 0, 0]} position={[ 416, 140, 860]} scale={[.6,.6,.6]} ref={rotationRef}>
+      <group rotation={[-Math.PI / 2, 0, 0]} position={[50, -200, 950]} scale={[.9, .9 ,.9]} ref={rotationRef}>
         <group rotation={[Math.PI / 2, 0, 0]}>
           <group rotation={[-Math.PI / 2, 0, 0]} scale={100}>
+      {/* <group rotation={[-Math.PI / 2, 0, 0]} position={[ 416, 140, 860]} scale={[.6,.6,.6]} ref={rotationRef}>
+        <group rotation={[Math.PI / 2, 0, 0]}>
+          <group rotation={[-Math.PI / 2, 0, 0]} scale={100}> */}
             <mesh geometry={nodes.Sphere_Material002_0.geometry} material={materials['Material.002']} />
           </group>
         </group>

@@ -25,10 +25,10 @@ export default function Model({ ...props }) {
 
     
   });
-  const { nodes, materials } = useGLTF('/uranus.gltf')
+  const { nodes, materials } = useGLTF('/uranusOut.gltf')
   return (
     <group ref={group} {...props} dispose={null} >
-      <group rotation={[-Math.PI / 2, 0, 0]} position={[-134, 404, -1074]} scale={[.3,.3,.3]} ref={rotationRef}>
+      <group rotation={[-Math.PI / 2, 0, 0]} position={[-134, 404, -1074]} scale={[.2,.2,.2]} ref={rotationRef}>
         <group rotation={[Math.PI / 2, 0, 0]}>
           <group rotation={[-1.7, 0, 0]}>
             <mesh geometry={nodes.Esfera_Mat1_0.geometry} material={nodes.Esfera_Mat1_0.material} />

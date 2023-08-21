@@ -3,8 +3,11 @@
 
 .about{
     position: absolute;
+    padding: inherit;
     z-index: 65;
     display: block; 
+    top: 20
+   
    
    
     
@@ -14,6 +17,7 @@
 }
 .header{
     display: flex;
+
     text-align: center;
     flex-direction: column;
     justify-content: center;
@@ -23,7 +27,7 @@
     
 }
 h4{
-    font-size: 48px;
+    font-size: 40px;
     color: white;
    
     

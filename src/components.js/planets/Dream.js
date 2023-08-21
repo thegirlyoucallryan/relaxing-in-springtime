@@ -24,7 +24,7 @@ export default function Moon(){
   
     const colorMap = useLoader(TextureLoader, texture)
     return(
-      <group ref={dreamRef} dispose={null}  scale={[10,10,10]} position={[-120, 10,-4]}>
+      <group ref={dreamRef} dispose={null}  scale={[10,10,10]} position={[340, -1,-4]}>
         <group rotation={[-Math.PI / 2, 11, 30.4]}>
       <mesh ref={dreamRef}  >
           <boxGeometry attach="geometry" />

@@ -17,9 +17,10 @@ export default function Model({ ...props }) {
     const elapsedTime = clock.getElapsedTime(); 
     group.current.rotation.y = -elapsedTime / 110;
     
+    
   });
  
-  const { nodes, materials } = useGLTF('/venus.gltf')
+  const { nodes, materials } = useGLTF('/venusOut.gltf')
   return (
     <group ref={group} {...props} dispose={null}   >
       <group rotation={[-Math.PI / 2, 0, 0]}  position={[ -386,-83, -265]} scale={[13,13,13]} >
@@ -33,4 +34,4 @@ export default function Model({ ...props }) {
   )
 }
 
-useGLTF.preload('/venus.gltf')
+useGLTF.preload('/venusOut.gltf')

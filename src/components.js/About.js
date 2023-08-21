@@ -7,12 +7,12 @@ const About = () => {
   window.addEventListener('mousedown', e => e.preventDefault());
 
   return(
-    <CanvasModule >
+   
+      
       <div className={styles.about}>
 
-        <Navigation title='About'/>
-       
-
+            
+        <div style={{height: 60}}>.</div>
           <div className={styles.header}>
           <h4>I design & build digital products</h4>
           <div className={styles.linkBox}>
@@ -27,14 +27,16 @@ const About = () => {
             I am well versed in Adobe Photoshop and Lightroom. I continue to study and implement designs that are both engaging and well communicative with its users.  &nbsp;I love Figma and greatly enjoy working with CSS to make things just right.
             <br/><br/>
             I am accustomed to fast paced enviroments and need to be challenged to thrive.  I love writing code because it enables me to be continously challenged and accomplished but also humbled and inspired by what others can do.
-            Thus far I have focused on JavaScript but am very eager to learn more languages. &nbsp; I have spent a lot of time working with libraries and frameworks like ReactJs, NextJs, NodeJs, and React Native.
+            So far I have focused mainly on web development technologies but, have been diving deeper into mobile app development. &nbsp; I have spent a lot of time working with libraries and frameworks like React, NextJs, Node, and React Native.
              This profile was built with ThreeJs.<br/><br/>
-            I tend to be focused and driven and very straight forward. I enjoy working as a team and am looking forward to the opportunity to work toward building new ideas that can enrich the lives of others. 
+            I spent the last year working with a dedicated, fast moving team at Haystack. Together we built a few of the apps listed in my projects section as well as the accompanying admin panels and websites. I am also launching a some personal projects of my own.
+             I tend to be focused and driven and very straight forward. I enjoy working as a team and am looking forward to the opportunity to work toward building new ideas that can enrich the lives of others. 
           </p>
           </div>
         
       </div>
-      </CanvasModule>
+  
+   
   )
 };
 
