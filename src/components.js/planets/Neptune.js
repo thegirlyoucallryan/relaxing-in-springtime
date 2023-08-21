@@ -20,7 +20,7 @@ export default function Model({ ...props }) {
       group.current.rotation.y = -elapsedTime / 66;
      
   });
-  const { nodes, materials } = useGLTF('/neptune.gltf')
+  const { nodes, materials } = useGLTF('/neptuneOut.gltf')
   return (
     <group ref={group} {...props} dispose={null} >
       <group rotation={[-Math.PI / 2, 0, 0]} position={[34, -460, 884]} scale={[41,41,41]} >

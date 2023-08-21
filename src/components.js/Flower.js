@@ -19,7 +19,7 @@ export default function Model({ ...props }) {
     
   });
   
-  const { nodes, materials } = useGLTF('/flower.gltf')
+  const { nodes, materials } = useGLTF('/flowerOut.gltf')
   return (
     <group {...props} dispose={null}>
       <group  ref={group}rotation={[Math.PI / 400, 34.99, -14.69]} scale={20.26}>
