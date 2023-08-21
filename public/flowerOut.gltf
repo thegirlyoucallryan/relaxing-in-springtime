@@ -330,7 +330,7 @@
     {
       "name": "Flower4_normal",
       "mimeType": "image/png",
-      "uri": "normal_1.png"
+      "uri": "textures/normal_1.png"
     },
     {
       "name": "Flower2_diffuse",
@@ -349,11 +349,11 @@
     },
     {
       "mimeType": "image/png",
-      "uri": "specular_1.png"
+      "uri": "textures/normal_1.png"
     },
     {
       "mimeType": "image/png",
-      "uri": "metallicRoughness_1.png"
+      "uri": "textures/metallicRoughness_1.png"
     }
   ],
   "buffers": [
